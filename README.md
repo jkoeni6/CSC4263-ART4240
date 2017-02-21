@@ -2,14 +2,14 @@ ART 4240 / CSC 4263 Game Design Project
 
 Team Members include:
 
-Aaron Schiler
+Aaron Schiler : Programmer
 
-Joshua Koenig
+Joshua Koenig : UI Design
 
-Justin Hester
+Justin Hester : Team Lead
 
-Nati Young
+Nati Young : Sound Design
 
-Zachary Bourgeois
+Zachary Bourgeois : Artist
 
 Project Suggestions:
