@@ -1,5 +1,7 @@
 ART 4240 / CSC 4263 Game Design Project
 
+Team Name : Space Y
+
 Team Members include:
 
 Aaron Schiler : Programmer
@@ -11,5 +13,3 @@ Justin Hester : Team Lead
 Nati Young : Sound Design
 
 Zachary Bourgeois : Artist
-
-Project Suggestions:
