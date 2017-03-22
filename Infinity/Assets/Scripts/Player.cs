@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 
 	private GameObject player;
 	private float theY;
+    public GameObject laserbeam;
 
 	void Start (){
 		player = GameObject.Find ("Ship_player");
@@ -29,5 +30,12 @@ public class Player : MonoBehaviour {
 				transform.position = new Vector3(transform.position.x, theY, transform.position.z);
 			}
 		}
-}
+
+        if (Input.GetKeyDown("space"))
+        {
+            Instantiate(laserbeam, transform.position, Quaternion.identity);
+            print("POW");
+        }
+    }
+
 }
