@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50863631240800012}
   - component: {fileID: 114515772865193170}
   - component: {fileID: 82970236968683060}
+  - component: {fileID: 60529769684851830}
   m_Layer: 0
   m_Name: laserbeam
   m_TagString: Untagged
@@ -63,6 +64,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &60529769684851830
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983652391008622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.16, y: 0.089999996}
+      - {x: -0.22999999, y: 0.04}
+      - {x: -0.22999999, y: 0}
+      - {x: -0.22, y: -0.04}
+      - {x: -0.14999999, y: -0.07}
+      - {x: 0.14, y: -0.07}
+      - {x: 0.22999999, y: -0.02}
+      - {x: 0.22999999, y: 0.04}
+      - {x: 0.21, y: 0.089999996}
 --- !u!82 &82970236968683060
 AudioSource:
   m_ObjectHideFlags: 1
@@ -154,7 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5aabcc57afcf540832a3eed7c3fef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
 --- !u!212 &212691748868633906
 SpriteRenderer:
   m_ObjectHideFlags: 1

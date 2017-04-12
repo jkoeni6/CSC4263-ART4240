@@ -12,7 +12,6 @@ public class Player : MonoBehaviour {
 		player = GameObject.Find ("Ship_player");
 	}
 
-
 	void Update () {
 		if (Input.GetKeyDown("up")) {
 			if (transform.position.y == 4) {
@@ -33,8 +32,12 @@ public class Player : MonoBehaviour {
 
         if (Input.GetKeyDown("space"))
         {
-            Instantiate(laserbeam, transform.position, Quaternion.identity);
-            print("POW");
+            if (Bullet.bulletExists == false)
+            {
+                Bullet.bulletExists = true;
+                Instantiate(laserbeam, transform.position, Quaternion.identity);
+                print("POW");
+            }
         }
     }
 
