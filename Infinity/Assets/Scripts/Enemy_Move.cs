@@ -5,15 +5,13 @@ using UnityEngine;
 public class Enemy_Move : MonoBehaviour {
     public float speed = 6.0f;
     public Transform target;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
+	// Method that moves enemies towards player when shouldMove == true
 	void FixedUpdate ()
     {
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        if (shipCollision.shouldMove == true)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
 	}
 }

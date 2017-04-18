@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
+        // Code that moves the ship up a lane when the up arrow is pressed
 		if (Input.GetKeyDown("up")) {
 			if (transform.position.y == 4) {
 				transform.position = transform.position;
@@ -20,8 +21,9 @@ public class Player : MonoBehaviour {
 				theY = transform.position.y + 2;
 				transform.position = new Vector3(transform.position.x, theY, transform.position.z);
 			}
-		} 
-		else if(Input.GetKeyDown("down")){
+		}
+        // Code that moves the ship down a lane when the down arrow is pressed
+        else if (Input.GetKeyDown("down")){
 			if (transform.position.y == -4) {
 				transform.position = transform.position;
 			} else {
@@ -30,6 +32,7 @@ public class Player : MonoBehaviour {
 			}
 		}
 
+        // Code that fires a laserbeam when the space key is pressed
         if (Input.GetKeyDown("space"))
         {
             if (Bullet.bulletExists == false)
