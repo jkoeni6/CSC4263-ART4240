@@ -5,6 +5,7 @@ using UnityEngine;
 public class shipCollision : MonoBehaviour
 {
     private GameObject ship1;
+    private GameObject livesText;
     public static int lives;
 
     // Boolean to stop enemy movement when the player loses a life
@@ -14,6 +15,7 @@ public class shipCollision : MonoBehaviour
     void Start()
     {
         ship1 = GameObject.Find("Ship_player");
+        livesText = GameObject.Find("LivesDisplay");
         lives = 3;
     }
 

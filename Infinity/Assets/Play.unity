@@ -134,6 +134,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy-2 concept
       objectReference: {fileID: 0}
+    - target: {fileID: 1779887074421820, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
   m_IsPrefabParent: 0
@@ -179,6 +183,10 @@ Prefab:
     - target: {fileID: 1779887074421820, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
       propertyPath: m_Name
       value: Enemy_2_Prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779887074421820, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
@@ -273,6 +281,10 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: -742217399
       objectReference: {fileID: 0}
+    - target: {fileID: 1346270107706118, guid: da45f1c809f4f1e4084dfa3d3e5d48a3, type: 2}
+      propertyPath: m_TagString
+      value: Asteroid
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da45f1c809f4f1e4084dfa3d3e5d48a3, type: 2}
   m_IsPrefabParent: 0
@@ -309,6 +321,17 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -0.21}
       - {x: 0.22999999, y: 0.01}
       - {x: 0.22, y: 0.049999997}
+--- !u!114 &144461109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144461107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4d820d1b2cc5d438174d872b1f8da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &152900656 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4635948693413196, guid: 2471d16b40a0d634c837f10bfd23c78b,
@@ -338,7 +361,7 @@ GUIText:
   m_GameObject: {fileID: 168753665}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: Score Text
+  m_Text: 'Score: 0'
   m_Anchor: 1
   m_Alignment: 0
   m_PixelOffset: {x: 0, y: 0}
@@ -399,6 +422,17 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -0.21}
       - {x: 0.22999999, y: 0.01}
       - {x: 0.22, y: 0.049999997}
+--- !u!114 &206981077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 206981075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4d820d1b2cc5d438174d872b1f8da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &252193226 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4160975423200342, guid: 0d146c9cb30ba2e47b608fb978461b24,
@@ -451,6 +485,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.416
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -496,6 +534,10 @@ Prefab:
     - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_Name
       value: Enemy_1_Prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
@@ -774,6 +816,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -847,6 +893,10 @@ Prefab:
     - target: {fileID: 1779887074421820, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
       propertyPath: m_Name
       value: Enemy_2_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1779887074421820, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
@@ -927,6 +977,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -973,6 +1027,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -1009,6 +1067,17 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -0.21}
       - {x: 0.22999999, y: 0.01}
       - {x: 0.22, y: 0.049999997}
+--- !u!114 &584291618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584291616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4d820d1b2cc5d438174d872b1f8da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &607886625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1127,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1143,6 +1212,10 @@ Prefab:
     - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_Name
       value: Enemy_1_Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
@@ -1326,6 +1399,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -1400,6 +1477,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -1445,6 +1526,10 @@ Prefab:
     - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_Name
       value: Enemy-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
@@ -1694,6 +1779,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1779887074421820, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2471d16b40a0d634c837f10bfd23c78b, type: 2}
   m_IsPrefabParent: 0
@@ -1843,6 +1932,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -1888,6 +1981,10 @@ Prefab:
     - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_Name
       value: Enemy_1_Prefab (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
@@ -1950,6 +2047,10 @@ Prefab:
       propertyPath: m_SortingLayerID
       value: -742217399
       objectReference: {fileID: 0}
+    - target: {fileID: 1346270107706118, guid: da45f1c809f4f1e4084dfa3d3e5d48a3, type: 2}
+      propertyPath: m_TagString
+      value: Asteroid
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da45f1c809f4f1e4084dfa3d3e5d48a3, type: 2}
   m_IsPrefabParent: 0
@@ -1995,6 +2096,10 @@ Prefab:
     - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_Name
       value: Enemy_1_Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
@@ -2207,6 +2312,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -2310,6 +2419,10 @@ Prefab:
     - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_Name
       value: Enemy_1_Prefab (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
@@ -2437,6 +2550,10 @@ Prefab:
       propertyPath: m_Name
       value: Enemy_1_Prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
   m_IsPrefabParent: 0
@@ -2473,6 +2590,17 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -0.21}
       - {x: 0.22999999, y: 0.01}
       - {x: 0.22, y: 0.049999997}
+--- !u!114 &1905216298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905216296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f4d820d1b2cc5d438174d872b1f8da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1934488599
 Prefab:
   m_ObjectHideFlags: 0
@@ -2511,6 +2639,10 @@ Prefab:
     - target: {fileID: 4160975423200342, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
       propertyPath: m_RootOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762600655922494, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
+      propertyPath: m_TagString
+      value: Enemy 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d146c9cb30ba2e47b608fb978461b24, type: 2}
