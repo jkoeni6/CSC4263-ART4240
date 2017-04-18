@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{EB2AC5B0-4180-D8D6-011A-016AEB8F75B3}") = "Infinity", "Assembly-CSharp.csproj", "{6D917400-A1B4-ADA0-D293-E7920B447DAA}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinity", "Assembly-CSharp.csproj", "{6D917400-A1B4-ADA0-D293-E7920B447DAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
