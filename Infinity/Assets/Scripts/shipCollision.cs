@@ -6,6 +6,8 @@ public class shipCollision : MonoBehaviour
 {
     private GameObject ship1;
     private GameObject livesText;
+	private GameObject livesDisplay1;
+	private GameObject livesDisplay2;
     public static int lives;
 
     // Boolean to stop enemy movement when the player loses a life
@@ -16,6 +18,8 @@ public class shipCollision : MonoBehaviour
     {
         ship1 = GameObject.Find("Ship_player");
         livesText = GameObject.Find("LivesDisplay");
+		livesDisplay1 = GameObject.Find("ShipLifeDisplay1");
+		livesDisplay2 = GameObject.Find("ShipLifeDisplay2");
         lives = 3;
     }
 
@@ -28,6 +32,14 @@ public class shipCollision : MonoBehaviour
         lives--; // Subtracts a life when the ship collides with another object
         if (lives > 0) // If there are more lives left, keep playing
         {
+			if (lives == 2) 
+			{
+				Destroy (livesDisplay2);
+			} 
+			else if (lives == 1) 
+			{
+				Destroy (livesDisplay1);
+			}
             print(lives);
         }
         else // Else, Game Over
