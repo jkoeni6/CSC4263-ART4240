@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour {
     public Rigidbody2D bullet;
     public static int score;
     private GUIText txtRef;
-    enemyHealth enemyHealth;
 
     // Boolean to see if a bullet exists in the game world at one specific time
     public static bool bulletExists = false;
@@ -53,20 +52,12 @@ public class Bullet : MonoBehaviour {
         // Handler for if obj is an "Enemy 2"  
         else if (obj.tag == "Enemy 2")
         {
-            enemyHealth = obj.GetComponent<enemyHealth>();
-            enemyHealth.applyDamage();
-            if(enemyHealth.health == 0)
-            {
-                Destroy(obj);
-                Destroy(this.gameObject);
-                bulletExists = false;
+            int temp = enemyHealth.applyDamage(obj);
+            print(temp);
+            if (temp == 0)
                 updateScore(200);
-            }
-            else
-            {
-                Destroy(this.gameObject);
-                bulletExists = false;
-            }
+            Destroy(this.gameObject);
+            bulletExists = false;
         }
         // Handler for if obj is an "Asteroid"
         else
