@@ -45,6 +45,7 @@ public class shipCollision : MonoBehaviour
         else // Else, Game Over
         {
             Destroy(ship1);
+            Application.LoadLevel("GameOver");
             print(lives);
         }       
     }
