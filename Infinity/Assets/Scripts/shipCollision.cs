@@ -76,10 +76,10 @@ public class shipCollision : MonoBehaviour
     // Method to take away a life when the ship collides with another object
     void OnTriggerEnter2D(Collider2D other)
     {
-        print("hit");
         shouldMove = false; // Stopping the enemy movement temporarily when the player loses a life
         GameObject obj = other.transform.gameObject;
         Destroy(obj); // Destroys the object the ship collided with
+        // Code for animation goes here
         lives--; // Subtracts a life when the ship collides with another object
         if (lives > 0) // If there are more lives left, keep playing
         {
