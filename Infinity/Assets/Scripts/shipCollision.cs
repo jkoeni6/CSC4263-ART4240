@@ -8,6 +8,7 @@ public class shipCollision : MonoBehaviour
     private GameObject livesText;
 	private GameObject livesDisplay1;
 	private GameObject livesDisplay2;
+    private GameObject livesDisplay3;
     private GUIText txtRef;
     public static int lives;
     private float timeLeft = 4; // Time in seconds for countdown
@@ -28,6 +29,7 @@ public class shipCollision : MonoBehaviour
         livesText = GameObject.Find("LivesDisplay");
 		livesDisplay1 = GameObject.Find("ShipLifeDisplay1");
 		livesDisplay2 = GameObject.Find("ShipLifeDisplay2");
+        livesDisplay3 = GameObject.Find("ShipLifeDisplay3");
         txtRef = GameObject.Find("LostLife").GetComponent<GUIText>();
         txtRef.enabled = false;
         lives = 3;
@@ -85,18 +87,19 @@ public class shipCollision : MonoBehaviour
         {
 			if (lives == 2) 
 			{
-				Destroy(livesDisplay2);
+				Destroy(livesDisplay3);
                 lostLifeText(lives);
 			} 
 			else if (lives == 1) 
 			{
-				Destroy(livesDisplay1);
+				Destroy(livesDisplay2);
                 lostLifeText(lives);
 			}
         }
         else // Else, Game Over
         {
             Destroy(ship1);
+            Destroy(livesDisplay1);
             Application.LoadLevel("GameOver");
         }       
     }

@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Start.unity
   - enabled: 1
     path: Assets/Play.unity
+  - enabled: 1
+    path: Assets/GameOver.unity
