@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
-
+public class Player : MonoBehaviour
+{
 	private GameObject player;
 	private float theY;
     public GameObject laserbeam;
 
-	void Start (){
-		player = GameObject.Find ("Ship_player");
+	void Start()
+    {
+		player = GameObject.Find("Ship_player");
 	}
 
-	void Update () {
-        if(shipCollision.shouldMove == true)
+	void Update()
+    {
+        if (shipCollision.shouldMove == true)
         {
             // Code that moves the ship up a lane when the up arrow is pressed
             if (Input.GetKeyDown("up"))
