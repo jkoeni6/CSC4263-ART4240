@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D bullet;
     public static int score;
     private GUIText txtRef;
+    AudioSource audio;
+    AudioClip explosion;
 
     // Boolean to see if a bullet exists in the game world at one specific time
     public static bool bulletExists = false;
@@ -16,6 +18,8 @@ public class Bullet : MonoBehaviour
     {
         bullet = GetComponent<Rigidbody2D>();   
         txtRef = GameObject.Find("Score Text").GetComponent<GUIText>();
+        audio = GetComponent<AudioSource>();
+        //expClip = GetComponent<AudioClip>();
     }
 
 	// Update is the method for making the bullet travel towards enemies
@@ -36,11 +40,14 @@ public class Bullet : MonoBehaviour
     {
         score = score + incScore;
         txtRef.text = "Score: " + score;
+        PlayerPrefs.SetInt("Score", score);
     }
 
     // Method to handle the collision of a bullet with an enemy
     void OnTriggerEnter2D(Collider2D other)
     {
+        audio.clip = explosion;
+        audio.Play();
         GameObject obj = other.transform.gameObject; // Gets the GameObject that the bullet collided with
         // Handler for if obj is an "Enemy 1"
         if (obj.tag == "Enemy 1")

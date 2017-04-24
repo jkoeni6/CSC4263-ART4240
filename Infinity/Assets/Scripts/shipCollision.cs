@@ -11,6 +11,7 @@ public class shipCollision : MonoBehaviour
     private GameObject livesDisplay3;
     private GUIText txtRef;
     public static int lives;
+    AudioSource audio;
     private float timeLeft = 4; // Time in seconds for countdown
 
     // Boolean to stop enemy movement when the player loses a life
@@ -33,6 +34,7 @@ public class shipCollision : MonoBehaviour
         txtRef = GameObject.Find("LostLife").GetComponent<GUIText>();
         txtRef.enabled = false;
         lives = 3;
+        audio = GetComponent<AudioSource>();
     }
 
     // Method that handles time countdown to start the game again
@@ -78,6 +80,7 @@ public class shipCollision : MonoBehaviour
     // Method to take away a life when the ship collides with another object
     void OnTriggerEnter2D(Collider2D other)
     {
+        audio.Play();
         shouldMove = false; // Stopping the enemy movement temporarily when the player loses a life
         GameObject obj = other.transform.gameObject;
         Destroy(obj); // Destroys the object the ship collided with
