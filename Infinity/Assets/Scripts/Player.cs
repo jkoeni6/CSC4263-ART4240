@@ -7,10 +7,14 @@ public class Player : MonoBehaviour
 	private GameObject player;
 	private float theY;
     public GameObject laserbeam;
+	public static string inputKeyUp;
+	public static string inputKeyDown;
 
 	void Start()
     {
 		player = GameObject.Find("Ship_player");
+		inputKeyUp = "up";
+		inputKeyDown = "down";
 	}
 
 	void Update()
@@ -18,7 +22,7 @@ public class Player : MonoBehaviour
         if (shipCollision.shouldMove == true)
         {
             // Code that moves the ship up a lane when the up arrow is pressed
-            if (Input.GetKeyDown("up"))
+			if (Input.GetKeyDown(inputKeyUp))
             {
                 if (transform.position.y == 4)
                 {
@@ -31,7 +35,7 @@ public class Player : MonoBehaviour
                 }
             }
             // Code that moves the ship down a lane when the down arrow is pressed
-            else if (Input.GetKeyDown("down"))
+			else if (Input.GetKeyDown(inputKeyDown))
             {
                 if (transform.position.y == -4)
                 {

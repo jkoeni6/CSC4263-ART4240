@@ -13,6 +13,7 @@ public class shipCollision : MonoBehaviour
     public static int lives;
     AudioSource audio;
     private float timeLeft = 4; // Time in seconds for countdown
+	private bool wormSwitch; //switch for inverting controls
 
     // Boolean to stop enemy movement when the player loses a life
     public static bool shouldMove = true;
@@ -35,6 +36,7 @@ public class shipCollision : MonoBehaviour
         txtRef.enabled = false;
         lives = 3;
         audio = GetComponent<AudioSource>();
+		wormSwitch = false;
     }
 
     // Method that handles time countdown to start the game again
@@ -80,31 +82,51 @@ public class shipCollision : MonoBehaviour
     // Method to take away a life when the ship collides with another object
     void OnTriggerEnter2D(Collider2D other)
     {
-        audio.Play();
-        shouldMove = false; // Stopping the enemy movement temporarily when the player loses a life
-        GameObject obj = other.transform.gameObject;
-        Destroy(obj); // Destroys the object the ship collided with
-        // Code for animation goes here
-        lives--; // Subtracts a life when the ship collides with another object
-        if (lives > 0) // If there are more lives left, keep playing
-        {
-			if (lives == 2) 
+		GameObject obj = other.transform.gameObject;
+		if(obj == GameObject.Find("Wormhole_Red"))
+		{
+			if (wormSwitch == false) 
 			{
-				Destroy(livesDisplay3);
-                lostLifeText(lives);
+				Player.inputKeyUp = "down";
+				Player.inputKeyDown = "up";
+				wormSwitch = true;
 			} 
-			else if (lives == 1) 
+			else if (wormSwitch == true) 
 			{
-				Destroy(livesDisplay2);
-                lostLifeText(lives);
+				Player.inputKeyUp = "up";
+				Player.inputKeyDown = "down";
+				wormSwitch = false;
 			}
-        }
-        else // Else, Game Over
-        {
-            Destroy(ship1);
-            Destroy(livesDisplay1);
-            Application.LoadLevel("GameOver");
-        }       
+		}
+
+		else
+		{
+        	audio.Play();
+        	shouldMove = false; // Stopping the enemy movement temporarily when the player loses a life
+        	//GameObject obj = other.transform.gameObject;
+        	Destroy(obj); // Destroys the object the ship collided with
+        	// Code for animation goes here
+        	lives--; // Subtracts a life when the ship collides with another object
+        	if (lives > 0) // If there are more lives left, keep playing
+        	{
+				if (lives == 2) 
+				{
+					Destroy(livesDisplay3);
+                	lostLifeText(lives);
+				} 
+				else if (lives == 1) 
+				{
+					Destroy(livesDisplay2);
+                	lostLifeText(lives);
+				}
+        	}
+        	else // Else, Game Over
+        	{
+            	Destroy(ship1);
+            	Destroy(livesDisplay1);
+            	Application.LoadLevel("GameOver");
+        	}
+		}
     }
 
     // Method to display guiText when the player loses a life
