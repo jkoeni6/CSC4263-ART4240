@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infinity", "Infinity.csproj", "{30363590-CCA4-D2AD-DAF5-79B798F56B08}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EB2AC5B0-4180-D8D6-011A-016AEB8F75B3}") = "Infinity", "Assembly-CSharp.csproj", "{6D917400-A1B4-ADA0-D293-E7920B447DAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30363590-CCA4-D2AD-DAF5-79B798F56B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30363590-CCA4-D2AD-DAF5-79B798F56B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30363590-CCA4-D2AD-DAF5-79B798F56B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30363590-CCA4-D2AD-DAF5-79B798F56B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D917400-A1B4-ADA0-D293-E7920B447DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D917400-A1B4-ADA0-D293-E7920B447DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D917400-A1B4-ADA0-D293-E7920B447DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D917400-A1B4-ADA0-D293-E7920B447DAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
