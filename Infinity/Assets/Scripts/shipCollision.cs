@@ -9,6 +9,7 @@ public class shipCollision : MonoBehaviour
 	private GameObject livesDisplay1;
 	private GameObject livesDisplay2;
     private GameObject livesDisplay3;
+    private GameObject cntDown;
     private GUIText txtRef;
     public static int lives;
     AudioSource audio;
@@ -32,6 +33,7 @@ public class shipCollision : MonoBehaviour
 		livesDisplay1 = GameObject.Find("ShipLifeDisplay1");
 		livesDisplay2 = GameObject.Find("ShipLifeDisplay2");
         livesDisplay3 = GameObject.Find("ShipLifeDisplay3");
+        cntDown = GameObject.Find("LivesDisplay");
         txtRef = GameObject.Find("LostLife").GetComponent<GUIText>();
         txtRef.enabled = false;
         lives = 3;
@@ -42,6 +44,7 @@ public class shipCollision : MonoBehaviour
     // Method that handles time countdown to start the game again
     void Update()
     {
+        
         if (expectSpace)
         {
             if (Input.GetKeyDown("space"))
@@ -56,18 +59,22 @@ public class shipCollision : MonoBehaviour
             timeLeft -= Time.deltaTime;
             if (timeLeft > 3)
             {
+                //cntDown.GetComponent<AudioSource>().Play();
                 txtRef.text = "3";
             }
             else if (timeLeft > 2)
             {
+                //cntDown.GetComponent<AudioSource>().Play();
                 txtRef.text = "2";
             }
             else if (timeLeft > 1)
             {
+                //cntDown.GetComponent<AudioSource>().Play();
                 txtRef.text = "1";
             }
             else if (timeLeft > 0)
             {
+                //cntDown.GetComponent<AudioSource>().Play();
                 txtRef.text = "Go!";
             }
             else
@@ -76,6 +83,7 @@ public class shipCollision : MonoBehaviour
                 shouldMove = true;
                 timeLeft = 4;
                 startCountdown = false;
+                
             }
         }
     }
@@ -124,7 +132,8 @@ public class shipCollision : MonoBehaviour
         	{
             	Destroy(ship1);
             	Destroy(livesDisplay1);
-            	Application.LoadLevel("GameOver");
+                DontDestroyOnLoad(GameObject.Find("Score Text"));
+                Application.LoadLevel("GameOver");
         	}
 		}
     }

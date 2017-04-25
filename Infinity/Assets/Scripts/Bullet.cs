@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public Rigidbody2D bullet;
     public static int score;
-    private GUIText txtRef;
+    public static GUIText txtRef;
     AudioSource audio;
     AudioClip explosion;
 
@@ -40,7 +40,7 @@ public class Bullet : MonoBehaviour
     {
         score = score + incScore;
         txtRef.text = "Score: " + score;
-        PlayerPrefs.SetInt("Score", score);
+        //PlayerPrefs.SetInt("Score", score);
     }
 
     // Method to handle the collision of a bullet with an enemy
